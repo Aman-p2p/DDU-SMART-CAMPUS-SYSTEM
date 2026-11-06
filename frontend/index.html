@@ -491,15 +491,15 @@
         </div>
       </div> -->
 
-      <!-- User Profile & Logout -->
-      <div class="p-4 border-t border-slate-100 bg-slate-50/50">
-        <div class="flex items-center gap-3 p-2 rounded-xl">
-          <div id="avatar-s" class="w-10 h-10 rounded-full bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center text-white font-bold text-sm shadow-xs">?</div>
+            <!-- User Profile & Logout (Fixed to bottom) -->
+      <div class="p-3 border-t border-slate-100 bg-slate-50/50 flex-shrink-0 mt-auto">
+        <div class="flex items-center gap-2.5 p-1.5 rounded-xl">
+          <div id="avatar-s" class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center text-white font-bold text-xs shadow-xs flex-shrink-0">?</div>
           <div class="flex-1 min-w-0">
-            <div id="user-name" class="text-sm font-semibold text-slate-900 truncate">—</div>
-            <div id="user-role-badge" class="text-xs text-slate-500 truncate capitalize">—</div>
+            <div id="user-name" class="text-xs font-bold text-slate-900 truncate">—</div>
+            <div id="user-role-badge" class="text-[10px] text-slate-500 truncate capitalize">—</div>
           </div>
-          <button onclick="logout()" title="Sign Out" class="p-2 rounded-lg hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition">
+          <button onclick="logout()" title="Sign Out" class="p-1.5 rounded-lg hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition flex-shrink-0">
             <i data-lucide="log-out" class="w-4 h-4"></i>
           </button>
         </div>
