@@ -1,0 +1,53 @@
+{
+  "university": "Deen Dayal Upadhyaya Gorakhpur University (DDUGU)",
+  "institute": "Institute of Engineering and Technology (IET)",
+  "academic_structure": {
+    "branches": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "intake_per_year": 150,
+        "sections": ["A", "B"],
+        "section_capacity": 75
+      },
+      {
+        "code": "AI_ML",
+        "name": "Artificial Intelligence & Machine Learning",
+        "intake_per_year": 150,
+        "sections": ["A", "B"],
+        "section_capacity": 75
+      },
+      {
+        "code": "AI_DS",
+        "name": "Artificial Intelligence & Data Science",
+        "intake_per_year": 75,
+        "sections": ["A"],
+        "section_capacity": 75
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "intake_per_year": 75,
+        "sections": ["A"],
+        "section_capacity": 75
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "intake_per_year": 75,
+        "sections": ["A"],
+        "section_capacity": 75
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "intake_per_year": 75,
+        "sections": ["A"],
+        "section_capacity": 75
+      }
+    ],
+    "total_students_per_year": 600,
+    "total_undergraduate_cohort": 2400,
+    "academic_years": [1, 2, 3, 4]
+  }
+}

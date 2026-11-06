@@ -1,0 +1,83 @@
+{
+  "campus": "DDUGU Engineering Campus",
+  "buildings": [
+    {
+      "code": "IET",
+      "name": "Institute of Engineering and Technology",
+      "distance_meters": 0,
+      "floors": [
+        {
+          "name": "Ground Floor",
+          "level": 0,
+          "spaces": [
+            { "code": "IET-LIB", "name": "Central Library", "capacity": 180, "type": "library", "exam_capable": true },
+            { "code": "IET-DIR", "name": "Director Office", "capacity": 15, "type": "office" },
+            { "code": "IET-ADMIN", "name": "Administrative Office", "capacity": 25, "type": "office" },
+            { "code": "IET-TCH", "name": "Teachers' Office / Cabins", "capacity": 35, "type": "office" },
+            { "code": "IET-PLACE", "name": "Placement Cell", "capacity": 30, "type": "office" }
+          ]
+        },
+        {
+          "name": "First Floor",
+          "level": 1,
+          "spaces": [
+            { "code": "IET20", "name": "Classroom IET 20", "capacity": 75, "type": "classroom" },
+            { "code": "IET18", "name": "Classroom IET 18", "capacity": 75, "type": "classroom" },
+            { "code": "IET19", "name": "Classroom IET 19", "capacity": 75, "type": "classroom" },
+            { "code": "IET17", "name": "Classroom IET 17", "capacity": 75, "type": "classroom" },
+            { "code": "IET22", "name": "CSE Laboratory", "capacity": 45, "type": "lab" },
+            { "code": "IET16", "name": "Mechanical Laboratory", "capacity": 40, "type": "lab" },
+            { "code": "IET14", "name": "ECE Laboratory", "capacity": 40, "type": "lab" },
+            { "code": "IET15", "name": "IT Laboratory", "capacity": 45, "type": "lab" }
+          ]
+        },
+        {
+          "name": "Second Floor",
+          "level": 2,
+          "spaces": [
+            { "code": "IET32", "name": "Seminar Hall IET 32", "capacity": 200, "type": "seminar" },
+            { "code": "IET24", "name": "Classroom IET 24", "capacity": 75, "type": "classroom" },
+            { "code": "IET25", "name": "Classroom IET 25", "capacity": 75, "type": "classroom" },
+            { "code": "IET28", "name": "Classroom IET 28", "capacity": 75, "type": "classroom" },
+            { "code": "IET29", "name": "Classroom IET 29", "capacity": 75, "type": "classroom" },
+            { "code": "IET30", "name": "Classroom IET 30", "capacity": 75, "type": "classroom" },
+            { "code": "IET23", "name": "Classroom IET 23 (Blueprint Corner)", "capacity": 75, "type": "classroom" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DB",
+      "name": "Deeksha Bhawan",
+      "distance_meters": 100,
+      "floors": [
+        {
+          "name": "Ground Floor",
+          "level": 0,
+          "spaces": [
+            { "code": "LH01", "name": "Lecture Hall 01", "capacity": 80, "type": "classroom" },
+            { "code": "LH02", "name": "Lecture Hall 02", "capacity": 80, "type": "classroom" },
+            { "code": "LH03", "name": "Lecture Hall 03", "capacity": 80, "type": "classroom" },
+            { "code": "LH04", "name": "Lecture Hall 04", "capacity": 80, "type": "classroom" },
+            { "code": "LH05", "name": "Lecture Hall 05", "capacity": 80, "type": "classroom" },
+            { "code": "LH06", "name": "Lecture Hall 06", "capacity": 80, "type": "classroom" },
+            { "code": "LH07", "name": "Lecture Hall 07", "capacity": 80, "type": "classroom" }
+          ]
+        },
+        {
+          "name": "First Floor",
+          "level": 1,
+          "spaces": [
+            { "code": "LH08", "name": "Lecture Hall 08", "capacity": 80, "type": "classroom" },
+            { "code": "LH09", "name": "Lecture Hall 09", "capacity": 80, "type": "classroom" },
+            { "code": "LH10", "name": "Lecture Hall 10", "capacity": 80, "type": "classroom" },
+            { "code": "LH11", "name": "Lecture Hall 11", "capacity": 80, "type": "classroom" },
+            { "code": "LH12", "name": "Lecture Hall 12", "capacity": 80, "type": "classroom" },
+            { "code": "LH13", "name": "Lecture Hall 13", "capacity": 80, "type": "classroom" },
+            { "code": "LH14", "name": "Lecture Hall 14", "capacity": 80, "type": "classroom" }
+          ]
+        }
+      ]
+    }
+  ]
+}
