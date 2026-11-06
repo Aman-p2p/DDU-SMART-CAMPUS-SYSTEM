@@ -2268,13 +2268,34 @@ function openBookingModal(room, overrideTime = null, overrideDate = null) {
   const currentHM = getISTTimeHM();
   let rawSearchDate = overrideDate || document.getElementById('f-date')?.value || todayIndianStr();
   let searchDate = toIsoDate(rawSearchDate);
-  let searchTime = overrideTime || document.getElementById('f-time')?.value || getNextHourSlot();
-
-  // If searchDate is today and searchTime is in the past, auto-advance to room's next free slot or upcoming slot
-  if (searchDate === todayStr() && searchTime < currentHM) {
-    searchTime = overrideTime || room.next_free_slot || getNextHourSlot();
-  }
   
+  // -----------------------------------------------------------------
+  // 🔥 FIX: Default Time to Current IST + 5 Mins (Rounded to 30 Mins)
+  // -----------------------------------------------------------------
+  let searchTime = overrideTime || document.getElementById('f-time')?.value;
+  
+  if (!overrideTime && searchDate === todayStr()) {
+    const now = getISTDateObj();
+    now.setMinutes(now.getMinutes() + 5); // Add 5 minutes buffer
+    const mins = now.getMinutes();
+    let h = now.getHours();
+    
+    // Round to nearest 30 mins
+    if (mins === 0 || mins === 30) {
+       // exact
+    } else if (mins < 30) {
+       now.setMinutes(30);
+    } else {
+       now.setHours(h + 1);
+       now.setMinutes(0);
+    }
+    const hh = String(now.getHours()).padStart(2, '0');
+    const mm = String(now.getMinutes()).padStart(2, '0');
+    searchTime = `${hh}:${mm}`;
+  } else if (!searchTime) {
+    searchTime = getNextHourSlot();
+  }
+
   const searchDuration = document.getElementById('f-duration')?.value || '1.5';
   
   const indianDateVal = formatDateDDMMYYYY(searchDate);
