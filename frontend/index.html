@@ -453,7 +453,7 @@
 
   <div class="flex flex-1">
     <!-- Sidebar -->
-    <aside id="sidebar" class="fixed lg:sticky top-0 left-0 z-50 h-screen w-72 bg-white border-r border-slate-200 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 flex flex-col">
+    <aside id="sidebar" class="fixed lg:sticky top-0 left-0 z-50 h-[100dvh] w-72 bg-white border-r border-slate-200 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 flex flex-col">
       <!-- App Brand (DDU Terracotta / Rust) -->
       <div class="p-4 border-b border-[#e2d0b5] bg-[#753402] text-white">
         <div class="flex items-center gap-3">
@@ -492,15 +492,16 @@
       </div> -->
 
             <!-- User Profile & Logout (Fixed to bottom) -->
-      <div class="p-3 border-t border-slate-100 bg-slate-50/50 flex-shrink-0 mt-auto">
-        <div class="flex items-center gap-2.5 p-1.5 rounded-xl">
-          <div id="avatar-s" class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center text-white font-bold text-xs shadow-xs flex-shrink-0">?</div>
+            <!-- User Profile & Logout (Fixed to bottom) -->
+      <div class="p-3 border-t border-slate-200 bg-slate-50 shrink-0">
+        <div class="flex items-center gap-2.5 p-1.5 rounded-xl bg-white border border-slate-200 shadow-2xs">
+          <div id="avatar-s" class="w-8 h-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center text-white font-bold text-xs shadow-xs flex-shrink-0">?</div>
           <div class="flex-1 min-w-0">
-            <div id="user-name" class="text-xs font-bold text-slate-900 truncate">—</div>
-            <div id="user-role-badge" class="text-[10px] text-slate-500 truncate capitalize">—</div>
+            <div id="user-name" class="text-[11px] font-bold text-slate-900 truncate leading-tight">—</div>
+            <div id="user-role-badge" class="text-[9px] text-slate-500 truncate capitalize leading-tight mt-0.5">—</div>
           </div>
-          <button onclick="logout()" title="Sign Out" class="p-1.5 rounded-lg hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition flex-shrink-0">
-            <i data-lucide="log-out" class="w-4 h-4"></i>
+          <button onclick="logout()" title="Sign Out" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition flex-shrink-0">
+            <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
           </button>
         </div>
       </div>
